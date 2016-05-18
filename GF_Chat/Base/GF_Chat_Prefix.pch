@@ -1,0 +1,31 @@
+//
+//  GF_Chat_Prefix.pch
+//  GF_Chat
+//
+//  Created by GaoFei on 16/5/18.
+//  Copyright © 2016年 YF_S. All rights reserved.
+//
+
+#ifndef GF_Chat_Prefix_pch
+#define GF_Chat_Prefix_pch
+
+#ifdef __OBJC__
+
+#import "AppDelegate.h"
+#import "XMTabBarController.h"
+
+//头文件
+#import "GF_Constans.h"
+
+//网络
+#import "MHNetwrok.h"
+#import "AFNetworking.h"
+#import "MBProgressHUD+Add.h"
+#import "MBProgressHUD.h"
+
+
+#endif
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* GF_Chat_Prefix_pch */

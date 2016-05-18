@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="inv-Mc-H5c">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="tMy-r6-Neh">
+            <objects>
+                <navigationController id="inv-Mc-H5c" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Nma-XH-HKy">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="HZf-Zs-guC" kind="relationship" relationship="rootViewController" id="dVe-BX-erJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YS2-Lk-VYt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4.5" y="225.5"/>
+        </scene>
+        <!--Chat View Controller-->
+        <scene sceneID="8Xl-5c-C6U">
+            <objects>
+                <viewController id="HZf-Zs-guC" customClass="ChatViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="DQc-wf-5HM"/>
+                        <viewControllerLayoutGuide type="bottom" id="6tT-7U-wPt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9AW-B4-RsU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1SS-vp-nKP">
+                                <rect key="frame" x="107" y="208" width="138" height="43"/>
+                                <color key="backgroundColor" red="0.98431372549999996" green="0.60392156860000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="模拟推出新界面"/>
+                                <connections>
+                                    <action selector="pushBtnAct:" destination="HZf-Zs-guC" eventType="touchUpInside" id="nEe-A2-d2Z"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="geF-qd-qKB"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EJ9-Zh-cp8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="424.5" y="225.5"/>
+        </scene>
+    </scenes>
+</document>
